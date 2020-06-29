@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap");
+body {
+  background-color: #E5E5E5;
+}
+
+.the-header {
+  padding: 65px 74px 110px 45px;
+  background-image: url("/assets/img/header_top_bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.the-header .logo {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.the-header .logo a {
+  text-decoration: none;
+  color: #000000;
+  outline: none;
+}
+
+.header-nav-menu {
+  position: relative;
+}
+
+.header-nav-menu__list {
+  margin-bottom: 0;
+}
+
+.header-nav-menu__item {
+  list-style-type: none;
+  position: relative;
+  margin-left: 56px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-block;
+  color: rgba(19, 39, 79, 0.6);
+}
+
+.header-nav-menu__item a {
+  color: inherit;
+}
+
+.header-nav-menu__item:hover {
+  color: #13274F;
+}
+
+.header-nav-menu__item:hover::before {
+  content: '';
+  position: absolute;
+  width: 52px;
+  height: 4px;
+  background: #597FE2;
+  border-radius: 25px;
+  bottom: -14px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header-nav-menu__item:hover a {
+  text-decoration: none;
+}
+
+.app-downloads {
+  padding: 50px 0 82px;
+}
+
+.app-downloads h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.app-downloads__subtitle {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 20px;
+}
+
+.app-downloads__card {
+  min-height: 278px;
+  border-radius: 15px;
+  background-color: #fff;
+  padding-bottom: 48px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.app-downloads__card:hover {
+  -webkit-transform: scale(1.12);
+      -ms-transform: scale(1.12);
+          transform: scale(1.12);
+}
+
+.app-downloads__card:hover .app-downloads__desc {
+  opacity: 1;
+}
+
+.app-downloads__card:hover .btn-outline-primary {
+  color: #fff;
+  background-color: #597FE2;
+}
+
+.app-downloads__card-icon {
+  margin: 20px auto 40px;
+}
+
+.app-downloads__card-icon img {
+  width: 100px;
+  height: auto;
+}
+
+.app-downloads .btn-outline-primary {
+  border-color: #EEF1FC;
+  color: #6D7593;
+  padding: 18px 24px;
+  font-weight: 600;
+}
+
+.app-downloads .btn-outline-primary:hover, .app-downloads .btn-outline-primary:active {
+  color: #fff;
+  background-color: #597FE2;
+}
+
+.app-downloads__desc {
+  margin-top: 20px;
+  opacity: 0;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  font-size: 14px;
+  color: #6D7593;
+}
+
+.app-downloads .gutters-sm {
+  margin-right: -26px;
+  margin-left: -26px;
+}
+
+.app-downloads .gutters-sm > .col,
+.app-downloads .gutters-sm > [class*="col-"] {
+  padding-right: 26px;
+  padding-left: 26px;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle {
+  background-color: #597FE2;
+  border-color: #597FE2;
+}
+
+.the-footer {
+  padding: 68px 0 34px 0;
+  background: #E2E7FA;
+}
+
+.the-footer strong {
+  display: block;
+  margin-bottom: 11px;
+  color: #13274F;
+  font-size: 16px;
+}
+
+.the-footer .the-copyright {
+  margin-top: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(19, 39, 79, 0.6);
+}
+
+.the-footer .gutters-sm {
+  margin-right: -50px;
+  margin-left: -50px;
+}
+
+.the-footer .gutters-sm > .col,
+.the-footer .gutters-sm > [class*="col-"] {
+  padding-right: 55px;
+  padding-left: 55px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 575.98px) {
+  .app-downloads__card:hover {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+  .app-downloads__card:hover .app-downloads__desc {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .app-downloads h1 {
+    font-size: 30px;
+  }
+  .app-downloads__subtitle {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 930px) {
+  #my-menu {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

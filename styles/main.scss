@@ -1,0 +1,44 @@
+// import fonts
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+
+// import vars
+@import "_vars";
+body {
+  background-color: #E5E5E5;
+}
+
+// import sections
+@import "_header";
+@import "_content";
+@import "_footer";
+body {
+  font-family: $default-font;
+}
+
+@media (max-width: 575.98px) { 
+  .app-downloads {
+    &__card {
+      &:hover {
+        transform: scale(1);
+        .app-downloads__desc {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .app-downloads {
+    h1 {
+      font-size: 30px;
+    }
+    &__subtitle {
+      font-size: 17px;
+    }
+  }
+}
+@media (max-width: 930px) {
+  #my-menu {
+    display: none;
+  }
+}

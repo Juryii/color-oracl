@@ -1,0 +1,28 @@
+.the-footer {
+  padding: 68px 0 34px 0;
+  background: #E2E7FA;
+  strong {
+    display: block;
+    margin-bottom: 11px;
+    color: #13274F;
+    font-size: 16px;
+  }
+  .the-copyright {
+    margin-top: 60px;
+    font-family: $default-font;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba($color: #13274F, $alpha: .6);
+
+  }
+  .gutters-sm {
+    margin-right: -50px;
+    margin-left: -50px;
+  
+    > .col,
+    > [class*="col-"] {
+      padding-right: 55px;
+      padding-left: 55px;
+    }
+  }
+}
