@@ -15,6 +15,30 @@ body {
   font-family: $default-font;
 }
 
+.gutters-xl {
+  margin-right: -50px;
+  margin-left: -50px;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 55px;
+    padding-left: 55px;
+  }
+}
+
+.gutters-lg {
+  margin-right: -26px;
+  margin-left: -26px;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 26px;
+    padding-left: 26px;
+  }
+}
+
+
+
 @media (max-width: 575.98px) { 
   .app-downloads {
     &__card {

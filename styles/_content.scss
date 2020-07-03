@@ -1,5 +1,6 @@
 .app-downloads {
-  padding: 50px 0 82px;
+  padding: 60px 0 82px;
+  background: #EEF1FC;
   h1 {
     font-weight: $font-weight-bold;
     font-size: 36px;
@@ -15,8 +16,10 @@
       min-height: 278px;
       border-radius: 15px;
       background-color: #fff;
-      padding-bottom: 48px;
+      padding-bottom: 30px;
       transition: 0.5s;
+      padding-top: 30px;
+
       &:hover {
         transform: scale(1.12);
         .app-downloads__desc {
@@ -25,6 +28,8 @@
         .btn-outline-primary {
           color: #fff;
           background-color: $primary;
+          border-color: $primary;
+          box-shadow: inset 0 0 0 4px #597FE2;
         }
       }
     }
@@ -38,10 +43,12 @@
       }
     }
     .btn-outline-primary {
-      border-color: #EEF1FC;
       color: #6D7593;
       padding: 18px 24px;
+      border: none;
+      box-shadow: inset 0 0 0 4px #EEF1FC;
       font-weight: $font-weight-semi-bold;
+      
       &:hover, &:active {
         color: #fff;
         background-color: $primary;
@@ -56,18 +63,9 @@
       transition: .5s;
       font-size: 14px;
       color: #6D7593;
+      margin-bottom: 0;
     }
 
-    .gutters-sm {
-      margin-right: -26px;
-      margin-left: -26px;
-    
-      > .col,
-      > [class*="col-"] {
-        padding-right: 26px;
-        padding-left: 26px;
-      }
-    }
 }
 .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
         background-color: $primary;

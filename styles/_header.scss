@@ -1,10 +1,11 @@
 .the-header {
   padding: 65px 74px 110px 45px;
-  background-image: url("/assets/img/header_top_bg.svg");
+  background-image: url("/assets/img/Vector\ 2.png"), url("/assets/img/Vector\ 1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
+  background-color: #EEF1FC;
   .logo {
     font-family: Montserrat;
     font-style: normal;
@@ -28,7 +29,7 @@
   &__item {
     list-style-type: none;
     position: relative;
-    margin-left: 56px;
+    margin-left: 36px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -36,11 +37,13 @@
     line-height: 20px;
     display: inline-block;
     color: rgba($color: #13274F, $alpha: .6);
+    padding: 16px 10px;
     a {
       color: inherit;
     }
     &:hover {
       color: #13274F;
+      cursor: pointer;
       &::before{
         content: '';
         position: absolute;
@@ -48,7 +51,7 @@
         height: 4px;
         background: #597FE2;
         border-radius: 25px;
-        bottom: -14px;
+        bottom: 2px;
         left: 50%;
         transform: translateX(-50%)
         

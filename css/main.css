@@ -5,13 +5,14 @@ body {
 
 .the-header {
   padding: 65px 74px 110px 45px;
-  background-image: url("/assets/img/header_top_bg.svg");
+  background-image: url("/assets/img/Vector 2.png"), url("/assets/img/Vector 1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #EEF1FC;
 }
 
 .the-header .logo {
@@ -39,7 +40,7 @@ body {
 .header-nav-menu__item {
   list-style-type: none;
   position: relative;
-  margin-left: 56px;
+  margin-left: 36px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;
@@ -47,6 +48,7 @@ body {
   line-height: 20px;
   display: inline-block;
   color: rgba(19, 39, 79, 0.6);
+  padding: 16px 10px;
 }
 
 .header-nav-menu__item a {
@@ -55,6 +57,7 @@ body {
 
 .header-nav-menu__item:hover {
   color: #13274F;
+  cursor: pointer;
 }
 
 .header-nav-menu__item:hover::before {
@@ -64,7 +67,7 @@ body {
   height: 4px;
   background: #597FE2;
   border-radius: 25px;
-  bottom: -14px;
+  bottom: 2px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -76,7 +79,8 @@ body {
 }
 
 .app-downloads {
-  padding: 50px 0 82px;
+  padding: 60px 0 82px;
+  background: #EEF1FC;
 }
 
 .app-downloads h1 {
@@ -94,10 +98,11 @@ body {
   min-height: 278px;
   border-radius: 15px;
   background-color: #fff;
-  padding-bottom: 48px;
+  padding-bottom: 30px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  padding-top: 30px;
 }
 
 .app-downloads__card:hover {
@@ -113,6 +118,9 @@ body {
 .app-downloads__card:hover .btn-outline-primary {
   color: #fff;
   background-color: #597FE2;
+  border-color: #597FE2;
+  -webkit-box-shadow: inset 0 0 0 4px #597FE2;
+          box-shadow: inset 0 0 0 4px #597FE2;
 }
 
 .app-downloads__card-icon {
@@ -125,9 +133,11 @@ body {
 }
 
 .app-downloads .btn-outline-primary {
-  border-color: #EEF1FC;
   color: #6D7593;
   padding: 18px 24px;
+  border: none;
+  -webkit-box-shadow: inset 0 0 0 4px #EEF1FC;
+          box-shadow: inset 0 0 0 4px #EEF1FC;
   font-weight: 600;
 }
 
@@ -144,17 +154,7 @@ body {
   transition: .5s;
   font-size: 14px;
   color: #6D7593;
-}
-
-.app-downloads .gutters-sm {
-  margin-right: -26px;
-  margin-left: -26px;
-}
-
-.app-downloads .gutters-sm > .col,
-.app-downloads .gutters-sm > [class*="col-"] {
-  padding-right: 26px;
-  padding-left: 26px;
+  margin-bottom: 0;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle {
@@ -167,11 +167,16 @@ body {
   background: #E2E7FA;
 }
 
-.the-footer strong {
+.the-footer__title {
   display: block;
   margin-bottom: 11px;
   color: #13274F;
   font-size: 16px;
+  font-weight: bold;
+}
+
+.the-footer__subtitle {
+  font-size: 14px;
 }
 
 .the-footer .the-copyright {
@@ -182,19 +187,30 @@ body {
   color: rgba(19, 39, 79, 0.6);
 }
 
-.the-footer .gutters-sm {
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.gutters-xl {
   margin-right: -50px;
   margin-left: -50px;
 }
 
-.the-footer .gutters-sm > .col,
-.the-footer .gutters-sm > [class*="col-"] {
+.gutters-xl > .col,
+.gutters-xl > [class*="col-"] {
   padding-right: 55px;
   padding-left: 55px;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
+.gutters-lg {
+  margin-right: -26px;
+  margin-left: -26px;
+}
+
+.gutters-lg > .col,
+.gutters-lg > [class*="col-"] {
+  padding-right: 26px;
+  padding-left: 26px;
 }
 
 @media (max-width: 575.98px) {
